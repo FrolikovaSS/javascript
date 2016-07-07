@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .close {
+            display: none;
+        }
+
+        .open{
+            display: block;
+        }
+    </style>
+    <script>
+      function getClose() {
+        var  x = document.getElementById("key");
+          x.className = "close";
+
+      }
+      function getOpen() {
+          var  x = document.getElementById("key");
+          x.className = "open";
+
+      }
+    </script>
+</head>
+<body>
+<button type="button" onclick = "getClose()">Close</button>
+<button type = "button" onclick="getOpen()">Open</button>
+<p id="key">NEW! I appear and disappear</p>
+</body>
+</html>
